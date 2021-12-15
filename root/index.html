@@ -2,14 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zuckerersatzstoffe</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="src/leaf-64.ico" type="image/x-icon">
+	<title>Zuckerersatzstoffe</title>
 </head>
 
 <body>
-    <h1>hello World</h1>
+	<nav class="side">
+		<h2>Inhaltsverzeichnis</h2>
+		<section class="inhaltsverzeichnis">
+			<a href="#einleitung">Einleitung</a>
+			<a href="#chemischerAufbau">Alditole</a>
+			<a href="#chemischerAufbau" class="eingerückt">Sorbit</a>
+			<a href="#chemischerAufbau" class="eingerückt">Xylit</a>
+			<a href="#chemischerAufbau" class="eingerückt">Erythrit</a>
+			<a href="#quellen">Quellen</a>
+		</section>
+	</nav>
+
+	<main>
+		<form action="javascript:quiz()" class="quiz">
+			<h1>Quiz</h1>
+			<div class="question">
+				<h3>Warum hat Dilara kein Gehirn</h3>
+				<div>
+					<input type="radio" name="0" id="a1" required>
+					<label for="a1">Sie wurde ohne eins geboren</label>
+				</div>
+				<div>
+					<input type="radio" name="0" id="a2" required>
+					<label for="a2">Was für eine absurde Idee, dass Dilara ein Gehirna haben könnte</label>
+				</div>
+				<div>
+					<input type="radio" name="0" id="a3" required>
+					<label for="a3">Die Forellen haben das Gehirn aufgegessen</label>
+				</div>
+			</div>
+			<button type="reset">reset</button>
+			<button type="submit">submit</button>
+		</form>
+	</main>
+
+	<script src="./main.js"></script>
 </body>
 
 </html>
