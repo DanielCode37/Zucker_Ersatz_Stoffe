@@ -5,6 +5,7 @@
 }
 
 body {
+    background-image: url(./src/background.jpg);
     background-size: cover;
 }
 
@@ -75,11 +76,11 @@ a, a:link {
 
 h1 {
     color: var(--grey-1);
-    font-size: 1.8rem;
 }
 
-h1#main {
-    font-size: 3rem;
+h1.heading {
+    color: var(--grey-4);
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -89,9 +90,9 @@ h3 {
 /* MAIN */
 
 main {
+    margin-left: 18vw;
     height: auto;
-    padding: 3rem;
-    line-height: 1.3rem;
+    padding: 1rem;
 }
 
 button {
@@ -137,11 +138,13 @@ form > div.body > div.card.active {
 section.info-card {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #eee;
+    border-radius: 0.7rem;
 } 
 
 section.info-card > div.header {
     display: flex;
-    margin-bottom: 1rem;
 }
 
 section.info-card > div.header > h3 {
@@ -151,87 +154,11 @@ section.info-card > div.header > h3 {
 
 section.info-card > div.header > h1 {
     border-right: 3px solid #444;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-right: 1rem;
-}
-
-section.info-card > div.main-text {
-    max-width: 70rem;
-}
-
-/* images */
-
-section > .images > div > img {
-    height: 10rem;
-}
-
-section > .images {
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-section > .images > div {
-    display: grid;
-    text-align: center;
-    width: auto;
-}
-
-section > .images > div > span {
-    font-size: 0.8rem;
 }
 
 ::selection { 
     background-color: #447529;
     border-radius: 1rem;
-}
-
-
-/* popup */
-
-.popup {
-    position: fixed;
-    left: 50vw;
-    top: 50vh;
-    transform: translate(-50%, -50%) scale(0);
-
-    z-index: 101;
-
-    height: 50vh;
-    width: 30vw;
-    background-color: #bee4ff;
-    border-radius: 1rem;
-    box-shadow: 5px 5px #2222;
-
-    display: grid;
-    justify-content: center;
-}
-
-.popup.active {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup > img {
-    height: 10rem;
-    margin: 0 auto;
-}
-
-.popup > h1 {
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-
-img.confetti {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    width: 100vw;
-    transform: scale(0);
-}
-
-
-img.confetti.active {
-    transform: scale(1);
 }
